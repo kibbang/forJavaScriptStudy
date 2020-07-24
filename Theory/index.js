@@ -73,3 +73,66 @@ console.log(daysOfWeek);
 console.log(daysOfWeek[2]); // 컴퓨터는 0부터 세기 시작함 그래서 3이 아닌 2임!
 
 // =========================================================================== //
+
+// Lecture 10 Organizing Data with Objects
+
+// Array와 Object의 차이점은 Object는 각 value에 이름을 줄 수 있다는 것
+// List로 만들고 싶으면 Array로 정렬
+// if 내 개인정보를 저장하고 싶다면?
+// -> Array는 단순 리스트이기때문에 효율적이지 않음
+// -> 이것이 Object를 써야 하는 이유!
+
+// Array는 []로 선언
+// Object는 {}로 선언
+// Object는 Array처럼 동작하지 않음
+
+//const myInfo = {"Kim", "aaa"} Error: Uncaught SyntaxError: Unexpected token ','
+
+// Object는 label에 data를 저장하는 것
+
+const myInfo = {
+  name: "Shin", // 여기서 name은 변수이기 때문에 그냥 적는 것
+  age: "29",
+  gender: "M",
+  liveInTokyo: true
+}
+console.log(myInfo);
+
+// 여기서 특정 값만 보고 싶을 때
+
+console.log(myInfo.name); // Shin
+
+myInfo.name = "Kim" // 값 변경 가능 Kim
+
+console.log(myInfo.name);
+
+// myInfo 안의 값은 바꿀 수 있다.
+// const 안의 값(name)을  바꿀 수 있다.
+// But myInfo 자체를 바꿀 수는 없다.
+// myInfo = true 이런건 안 됨
+
+// 데이터를 정렬하는 방법은 Array,Object 2가지
+// Array -> DB에서 가져온 ListData일 때 사용
+// Array를 Object에 넣을 수 있다.
+
+const myInfo2 = {
+  name: "Shin",
+  age: "29",
+  gender: "M",
+  liveInTokyo: true,
+  favGames:["Starcraft", "LoL", "AFK"],
+  favFood: [
+    {
+      name: "Kimchi", // , 빼먹지 말 것!!
+      fatty: false
+    },
+    {
+      name: "Pizza",
+      fatty: true
+    }
+  ]
+}
+console.log(myInfo2);
+
+// Object안에 Array가 있고 그 안에 Object가 있음
+// Console.log 읽는 거 중요함
