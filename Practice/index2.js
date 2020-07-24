@@ -22,3 +22,17 @@ console.dir(document);
 document.title = "hello";
 
 //======================================================================================= //
+
+//  Events and event handlers //
+
+// JavaScript는 이벤트에 반응하기 위해 만들어 졌다.
+// 그럼 그 '이벤트'는 무엇인가?
+// -> 웹사이트에서 발생하는 것들! (click, resize, submit, inputchange, load...)
+// 중간에 가로챌 수 있다.
+
+function handleClick(){ // event는 JavaScript로 부터 온 것! 이벤트를 다룰 함수를 만들 때 마다
+  title.style.color = "blue";        // JavaScript가 자동으로 붙임
+  // console.log("I have been resized!");
+}
+
+title.addEventListener("click", handleClick); // function()이거 아님 주의할 것!
