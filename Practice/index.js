@@ -83,3 +83,52 @@ sayHello2("Bro!", 20);
 
 // ================================================================================================ //
 
+// More Function Fun //
+
+// JavaScript에선 ""도 스트링이고 ''도 스트링이다.
+// ``(백틱)
+
+function sayHello3(name, age){
+  // console.log(`Hello ${name} you are ${age} years old!`); // 이것을
+  return `Hello ${name} you are ${age} years old!` // 이렇게 수정하면
+}
+
+// console.log 말고 return으로 해보자!
+
+const greetBro = sayHello3("Bro", 25); // greetBro는 sayHello3() 함수의 return 값과 같다.
+                                       // 즉 greetBro는 sayHello3() 함수의 결과값
+                                       // 하지만 함수에서 아무것도 반환하지 않았음
+
+console.log(greetBro); // undefined -> 결과가 나옴
+
+
+const calculator = {
+  plus: function(num1, num2){
+    return num1 + num2;
+  },
+
+  minus: function(num1, num2){
+    return num1 - num2;
+  },
+
+  multiple: function(num1, num2){
+    return num1 * num2;
+  },
+
+  divide: function(num1,num2){
+    return num1 / num2;
+  },
+
+  square: function(num1){
+    return num1 * num1
+  },
+}
+const plus = calculator.plus(5, 5);
+const minus = calculator.minus(7, 5);
+const multiple = calculator.multiple(7,3);
+const divide = calculator.divide(6,3);
+const square = calculator.square(3);
+
+console.log(plus, minus, multiple, divide, square);
+
+// ================================================================================================ //
