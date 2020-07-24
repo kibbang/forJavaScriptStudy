@@ -55,12 +55,12 @@ set memory: ƒ ()
 // 2. 함수 이름 선언 function ~~~
 // 3. 내용 입력
 
-function sayHello(){  // 원하는 것을 적어주면 됨 아무거나 (coffee가 함수안에서 사용하게 될 이름이 됨)
-  console.log(" Hello "); // 여기에서 coffee를 사용해준다.
+function sayHello(){
+  console.log(" Hello ");
 }
 
 function sayHello2(name, age){  // 원하는 것을 적어주면 됨 아무거나 (coffee가 함수안에서 사용하게 될 이름이 됨)
-  console.log(" Hello ", name, " Your age is ", age); // 여기에서 coffee를 사용해준다.
+  console.log(" Hello ", name, " Your age is ", age); // 여기에서 coffee를 사용해준다. -> name으로 추후 수정
 }
 
 // 함수 사용
