@@ -17,6 +17,7 @@ a = 4;
 // let b = a-5;
 // a = 4;
 // console.log(b, a); //(error 발생) -> const로 값을 고정했는데 업데이트를 했기 때문
+
 // 변수의 값을 바꾸고 싶지 않을 때는 let이 아닌 const를 사용( 안정적이라는 뜻(상수))
 // 19번라인의 에러내용 -> Uncaught TypeError: Assignment to constant variable.
 // -> 상수변수에 대입(불가능한 것)
