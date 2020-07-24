@@ -15,7 +15,10 @@ title.innerHTML = "Hi! JS"; // title이 "Hi! JS"로 바뀜 but html 파일은 �
 //======================================================================================= //
 
 // Modifying the DOM with JS //
+
 console.dir(title);
 title.style.color = "red";
 console.dir(document);
 document.title = "hello";
+
+//======================================================================================= //
