@@ -27,7 +27,7 @@ console.log(b , a);
 
 // var = varible
 // var도 let처럼 값을 바꿀 수 있다.
-// ===========================================================================//
+// =========================================================================== //
 
 // Lecture 8 Data Type On Js
 
@@ -54,3 +54,22 @@ console.log(forNum); // 말 그대로 숫자 출력
 const forFloat = 77.1;
 console.log(forFloat);
 
+// =========================================================================== //
+
+// Lecture 9 Organizing Data with Arrays
+
+// Data Type의 정렬 방법은 2가지!
+// 1. Array  2. Object
+// Array = List같은 것
+
+const anything = "Hello";
+const daysOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", true, anything];
+// 변수명은 Camel case로 작성하는 것이 보기 좋음 (시작은 소문자)
+// []가 Array의 선언
+console.log(daysOfWeek);
+
+// Array는 규칙을 가지고 있음(Array 안에 규칙을 가지고 있음)
+// If 3번째 것을 보고싶다!
+console.log(daysOfWeek[2]); // 컴퓨터는 0부터 세기 시작함 그래서 3이 아닌 2임!
+
+// =========================================================================== //
