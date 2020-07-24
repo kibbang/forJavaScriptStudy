@@ -7,6 +7,9 @@
  ほとんどの内容は.jsファイルにあります。
 
 
+
+
+
  개인의 공부를 위한 레포지토리입니다.
 
  It is a repertoire for individual study.
