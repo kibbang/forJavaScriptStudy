@@ -1,0 +1,34 @@
+.js-toDoList{
+  font-size: 25px;
+  font-style: initial;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.form,
+.greeting{
+  display: none;
+}
+
+
+input{
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  width: 250px;
+  color: whitesmoke;
+  text-align: left;
+}
+
+input::placeholder{
+  color: white;
+  font-size: 25px;
+  font-style: oblique;
+  opacity: 0.6;
+}
+
+.showing{
+  display: block ;
+}

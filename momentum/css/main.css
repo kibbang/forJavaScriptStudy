@@ -1,0 +1,47 @@
+body{
+  background-color: #333333;
+}
+
+body{
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 5em;
+  margin: 0px 0px 15px 0px;
+}
+
+h4{
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+}
+
+span{
+  cursor: pointer;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0 ;
+  }
+  to{
+    opacity: 0.4;
+  }
+}
+
+.backgroundImage{
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 1s ease-in-out forwards;
+  opacity: 0.3;
+}
