@@ -22,6 +22,8 @@ function saveToDos(){
   localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
 }
 
+
+
 function paintToDo(text){
   const li = document.createElement("li");
   const delBtn = document.createElement("span");
@@ -38,6 +40,11 @@ function paintToDo(text){
     text: text,
     id: newId
   };
+  if(!toDoObj.text){
+    delBtn.innerText = null;
+    toDoList.removeChild(li)
+    return toDos;
+  }
   toDos.push(toDoObj);
   saveToDos();
 }

@@ -5,4 +5,7 @@
   right: 15px;
   font-size: 25px;
   font-style: italic;
+  @media screen and (max-width:788px){
+    width 100%
+  }
 }
