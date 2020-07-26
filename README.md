@@ -15,3 +15,7 @@
  It is a repertoire for individual study.
 
  個人の勉強のためのレポジトリです。
+
+ For Test
+
+ https://kibbang.github.io/forJavaScriptStudy/momentum/
